@@ -10,7 +10,7 @@ function getWeather(lat, lng) {
     }).then(function (json) {
         const temperature = json.main.temp;
         const palce = json.name;
-        weather.innerText = `${temperature}˚ / ${palce}`;
+        weather.innerText = `${temperature} @ ${palce}`;
     });
 }
 
