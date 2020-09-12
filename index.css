@@ -1,6 +1,37 @@
 body{
-    color:#2c3e50;
+    color:white;
     background-color:#2c3e50;
+}
+
+.js{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+}
+
+h1{
+    font-size: 125px;
+    margin: 0px;
+    padding: 0px;
+}
+
+h4{
+    font-size: 35px;
+}
+
+input{
+    margin-top: 15px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.center{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .form,
@@ -10,6 +41,7 @@ body{
 
 .showing{
     display: block;
+    margin: 0;
 }
 
 @keyframes fadeIn{
@@ -21,12 +53,22 @@ body{
     }
 }
 
+.js-weather{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px 10px;
+    font-weight: bold;
+    font-size:20px;
+}
+
 .bgImage{
-    position: absolute;;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index:-1;
     animation: fadeIn 0.5s linear;
+    object-fit: cover;
 }
